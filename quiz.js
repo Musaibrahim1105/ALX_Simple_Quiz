@@ -10,7 +10,7 @@ function checkAnswer(){
     let userAnswer = document.querySelector('input[name="quiz"]:checked');
     userAnswer = userAnswer.value;
 
-    if(userAnswer===correctAnswer){
+    if (userAnswer === correctAnswer){
         
         feedBack.textContent = "Correct! well done"
         feedBack.style.color = 'green'
