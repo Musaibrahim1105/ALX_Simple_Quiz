@@ -5,7 +5,7 @@ let feedBack = document.querySelector('#feedback');
 
 //feedBack.innerHTML = 'wrong'
 function checkAnswer(){
-    let correctAnswer = 4;
+    let correctAnswer = "4";
 
     if(userAnswer.value==correctAnswer){
         feedBack.innerHTML = "Correct! well done"
