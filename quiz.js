@@ -12,11 +12,11 @@ function checkAnswer(){
 
     if (userAnswer === correctAnswer){
         
-        feedBack.textContent = "Correct! well done"
+        feedBack.textContent = "Correct! Well done."
         feedBack.style.color = 'green'
 
     }else {
-        feedBack.textContent = "That's incorrect. try again! "
+        feedBack.textContent = "That's incorrect. Try again!"
         feedBack.style.color = 'red'
     }
     // else{
