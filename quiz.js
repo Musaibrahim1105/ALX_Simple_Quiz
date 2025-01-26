@@ -1,26 +1,31 @@
-let userAnswer = document.querySelector('input[name="quiz"]');
+
 let feedBack = document.querySelector('#feedback');
+let submit = document.querySelector('#submit-answer')
 //console.log(feedBack)
 //console.log(userAnswer.value)
 
 //feedBack.innerHTML = 'wrong'
 function checkAnswer(){
     let correctAnswer = "4";
+    let userAnswer = document.querySelector('input[name="quiz"]:checked');
 
     if(userAnswer.value==correctAnswer){
-        feedBack.innerHTML = "Correct! well done"
+        feedBack.textContent = "Correct! well done"
         feedBack.style.color = 'green'
 
-    }else{
-        feedBack.innerHTML = "That's incorrect. try again! "
+    }else {
+        feedBack.textContent = "That's incorrect. try again! "
         feedBack.style.color = 'red'
     }
+    // else{
+    //     feedBack.textContent = "please swlwct an answer before submitting"
+    // }
 }
   
 //checkAnswer();
 
 //EVENT LISTENER
-let btn = document.getElementById('submit-answer')
+//let btn = document.getElementById('submit-answer')
 //console.log(btn)
 
-btn.addEventListener('submit', checkAnswer);
+submit.addEventListener('click', checkAnswer);
