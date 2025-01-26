@@ -23,4 +23,4 @@ function checkAnswer(){
 let btn = document.getElementById('submit-answer')
 //console.log(btn)
 
-btn.addEventListener('click', checkAnswer);
+btn.addEventListener('submit', checkAnswer);
