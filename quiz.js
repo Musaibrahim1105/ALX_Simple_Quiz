@@ -8,8 +8,10 @@ let submit = document.querySelector('#submit-answer')
 function checkAnswer(){
     let correctAnswer = "4";
     let userAnswer = document.querySelector('input[name="quiz"]:checked');
+    userAnswer = userAnswer.value;
 
-    if(userAnswer.value==correctAnswer){
+    if(userAnswer==correctAnswer){
+        
         feedBack.textContent = "Correct! well done"
         feedBack.style.color = 'green'
 
